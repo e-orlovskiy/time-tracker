@@ -1,0 +1,120 @@
+ul > li {
+	list-style: none;
+}
+
+.tasklist-page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.tasklist-container {
+	width: 900px;
+	height: 750px;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border-radius: 10px;
+	border: 3px solid rgba(255, 255, 255, 0.18);
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	position: relative;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0 10px 0;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.18);
+}
+
+.header-text {
+	color: #0b577d;
+	font-size: 56px;
+	margin-left: 10px;
+}
+
+.user-container {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	gap: 10px;
+}
+
+.user-container > img {
+	width: 75px;
+	height: 75px;
+	border-radius: 10%;
+}
+
+.user-text-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	color: #053d59;
+}
+
+.search-container {
+	position: relative;
+	margin-top: 10px;
+	width: 50%;
+}
+
+.search-container input {
+	width: 100%;
+	background: transparent;
+	outline: none;
+	font-size: 24px;
+	border: none;
+	border: 3px solid rgba(255, 255, 255, 0.18);
+	color: #0b577d;
+	border-radius: 10px;
+	padding: 10px 10px 10px 40px;
+}
+
+.search-container input::placeholder {
+	color: #0b577d;
+}
+
+.search-icon {
+	position: absolute;
+	left: 12.5px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+	color: #0b577d;
+}
+
+.list {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 5px;
+	max-height: 63.5%;
+	overflow-y: auto;
+}
+
+.add-task {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	background: transparent;
+	font-size: 35px;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid #6db7de74;
+	outline: none;
+	color: #6db6de;
+	border-radius: 7.5px;
+}

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Madimi One', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background: url('/bg.png') no-repeat;
+	background-size: cover;
+}
+
+#root {
+	height: 100%;
+}
